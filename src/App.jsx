@@ -19,7 +19,9 @@ function App() {
   }
 
   const handleMarksASRead = (id, time) => {
-
+    // console.log(id)
+    const idd = parseFloat(id)
+    console.log(typeof idd)
     setReadingTime(readingTime + time)
     // remove the read blog from 
 

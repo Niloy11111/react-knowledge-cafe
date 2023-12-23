@@ -2,11 +2,17 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Blog from "../Blog/Blog";
 import PropTypes from 'prop-types'
+// testing to github 
+// testing to github 
+// testing to github 
+// testing to github
+
 
 
 const Blogs = ({handleAddToBookmark, handleMarksASRead}) => {
 
     const [blogs, setBlogs] = useState([]);
+    const [time , setTime] = useState(2) ;
 
     useEffect( () => {
         fetch('blogs.json')
